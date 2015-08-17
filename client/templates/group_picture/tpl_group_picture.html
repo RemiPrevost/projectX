@@ -1,0 +1,32 @@
+<template name="tpl_group_picture">
+    <section id="group_picture_section">
+        {{#each member}}
+            <div class="frame" style="top:{{position.x}}%;left:{{position.y}}%;">
+                <div class="detail_card">
+                    <p>{{prenom}} {{nom}}</p>
+                    <a href=""><p>Voir plus de détails</p></a>
+                </div>
+            </div>
+
+        {{/each}}
+
+        <img id="group_picture" src="/img/picture.jpg" />
+
+        <!--<div id="overlay">
+            <div class="row">
+                <div class="col-xs-4">
+                    <img id="member_picture" src="/img/me.png" />
+                </div>
+                <div class="col-xs-8">
+                    <div class="row">s
+                        <p id="member_full_name">Nom Prénom</p>
+                    </div>
+                    <div class="row">
+                        <a id="member_link" href="">Voir plus de détails</a>
+                    </div>
+                </div>
+            </div>
+        </div>-->
+
+    </section>
+</template>

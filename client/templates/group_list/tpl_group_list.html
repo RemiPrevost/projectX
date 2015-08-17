@@ -1,0 +1,42 @@
+<template name="tpl_group_list">
+    <section id="group_list_section">
+        <div id="group_list_container" class="container">
+            <div class="row">
+                <div class="input-group">
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="button">
+                        <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                  <input type="text" class="form-control" placeholder="Rechercher ...">
+                </div>
+            </div>
+            <div class="row">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Nom</th>
+                            <th>Prénom</th>
+                            <th>@mail</th>
+                            <th>Téléphone</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        {{#each member}}
+                        <tr class="table-line">
+                            <td>{{nom}}</td>
+                            <td>{{prenom}}</td>
+                            <td>{{mail}}</td>
+                            <td>{{tel}}</td>
+                            <td class="table-btn-field"><button class="btn btn-default btn-edit" type="button">Modifier</button></td>
+                        </tr>
+                        {{/each}}
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+</template>
