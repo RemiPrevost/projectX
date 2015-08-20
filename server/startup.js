@@ -1,5 +1,5 @@
 /**
- * Created by Rémi Prévost on 28/07/2015.
+ * Created by RÃ©mi PrÃ©vost on 28/07/2015.
  */
 
 Meteor.startup(function() {
@@ -7,9 +7,69 @@ Meteor.startup(function() {
     if (Members.find().count() === 0) {
         var data = [
             {
-                nom : 'nom1',
-                prenom : 'prenom1',
-                mail : '@mail1',
+                nom : 'Toto',
+                prenom : 'truc',
+                mail : '@mr_robot.com',
+                tel : 'tel1'
+            },
+            {
+                nom : 'Pascal',
+                prenom : 'Juju',
+                mail : '@sweet.fr',
+                tel : 'tel2'
+            },
+            {
+                nom : 'Hello',
+                prenom : 'Tota',
+                mail : '@mail.co.uk',
+                tel : 'tel3'
+            },
+            {
+                nom : 'nom',
+                prenom : 'prenom',
+                mail : '@truc',
+                tel : 'tel4'
+            },
+            {
+                nom : 'face',
+                prenom : 'twin',
+                mail : '@where',
+                tel : 'tel5'
+            },
+            {
+                nom : 'Toto',
+                prenom : 'truc',
+                mail : '@mr_robot.com',
+                tel : 'tel1'
+            },
+            {
+                nom : 'Pascal',
+                prenom : 'Juju',
+                mail : '@sweet.fr',
+                tel : 'tel2'
+            },
+            {
+                nom : 'Hello',
+                prenom : 'Tota',
+                mail : '@mail.co.uk',
+                tel : 'tel3'
+            },
+            {
+                nom : 'nom',
+                prenom : 'prenom',
+                mail : '@truc',
+                tel : 'tel4'
+            },
+            {
+                nom : 'face',
+                prenom : 'twin',
+                mail : '@where',
+                tel : 'tel5'
+            },
+            {
+                nom : 'Toto',
+                prenom : 'truc',
+                mail : '@mr_robot.com',
                 tel : 'tel1',
                 position: {
                     x:8.12,
@@ -18,9 +78,9 @@ Meteor.startup(function() {
                 img: 'me1.png'
             },
             {
-                nom : 'nom2',
-                prenom : 'prenom2',
-                mail : '@mail2',
+                nom : 'Pascal',
+                prenom : 'Juju',
+                mail : '@sweet.fr',
                 tel : 'tel2',
                 position: {
                     x:7.52,
@@ -29,9 +89,9 @@ Meteor.startup(function() {
                 img: 'me2.png'
             },
             {
-                nom : 'nom3',
-                prenom : 'prenom3',
-                mail : '@mail3',
+                nom : 'Hello',
+                prenom : 'Tota',
+                mail : '@mail.co.uk',
                 tel : 'tel3',
                 position: {
                     x:54.9,
@@ -40,9 +100,9 @@ Meteor.startup(function() {
                 img: 'me3.png'
             },
             {
-                nom : 'nom4',
-                prenom : 'prenom4',
-                mail : '@mail4',
+                nom : 'nom',
+                prenom : 'prenom',
+                mail : '@truc',
                 tel : 'tel4',
                 position: {
                     x:41.78,
@@ -51,11 +111,11 @@ Meteor.startup(function() {
                 img: 'me4.png'
             },
             {
-                nom : 'nom5',
-                prenom : 'prenom5',
-                mail : '@mail5',
+                nom : 'face',
+                prenom : 'twin',
+                mail : '@where',
                 tel : 'tel5'
-            },
+            }
         ];
 
         for (var i = 0; i < data.length; i++) {

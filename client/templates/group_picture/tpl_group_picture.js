@@ -1,5 +1,5 @@
 /**
- * Created by Rémi Prévost on 15/08/2015.
+ * Created by RÃ©mi PrÃ©vost on 15/08/2015.
  */
 
 Template.tpl_group_picture.helpers({
